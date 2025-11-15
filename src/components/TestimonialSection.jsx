@@ -36,7 +36,7 @@ function TestimonialSection() {
         {/* Left Arrow */}
         <button
           onClick={prevSlide}
-          className="absolute left-[-100px] top-1/2 -translate-y-1/2 bg-gray-700 p-3 rounded-full hover:bg-yellow-400 transition"
+          className="hidden sm:block absolute left-[-100px] top-1/2 -translate-y-1/2 bg-gray-700 p-3 rounded-full hover:bg-yellow-400 transition"
         >
           <FaChevronLeft />
         </button>
@@ -54,7 +54,7 @@ function TestimonialSection() {
         {/* Right Arrow */}
         <button
           onClick={nextSlide}
-          className="absolute right-[-100px] top-1/2 -translate-y-1/2 bg-gray-700 p-3 rounded-full hover:bg-yellow-400 transition"
+          className="hidden sm:block absolute right-[-100px] top-1/2 -translate-y-1/2 bg-gray-700 p-3 rounded-full hover:bg-yellow-400 transition"
         >
           <FaChevronRight />
         </button>
