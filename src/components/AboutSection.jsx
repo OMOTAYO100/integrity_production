@@ -14,6 +14,7 @@ function AboutSection() {
       <img
         className="w-full h-full object-cover rounded-2xl"
         src={AboutBg}
+        loading="lazy"
         alt="About-image"
       />
     </figure>

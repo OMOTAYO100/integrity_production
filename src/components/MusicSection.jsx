@@ -45,7 +45,7 @@ function MusicSection() {
   ];
 
   return (
-    <section id="work" className="bg-black text-white p-6 md:p-20 ">
+    <section id="work" className="bg-black text-white md:p-20 ">
       <div className="flex flex-col space-y-8 justify-self-center">
         <h2 className="relative text-4xl text-center md:text-7xl before:content-[''] before:absolute before:w-35 sm:before:w-70 before:h-1 before:rounded-full before:-bottom-3 before:left-25 sm:before:left-12 before:bg-yellow-500">
           Featured <span className="text-yellow-500">Work</span>
@@ -74,43 +74,43 @@ function MusicSection() {
         </div>
 
         
-        <div className="grid mt-10 gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
-          {filteredMusic.map((item) => (
-            <div
-              key={item.id}
-              className="relative group bg-gray-900 border border-gray-700 rounded-xl overflow-hidden shadow-lg"
-            >
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-40 object-cover"
-              />
+        <div className="grid mt-10 gap-6 sm:grid-cols-2 lg:grid-cols-3 px-4 sm:px-6 lg:px-8">
+  {filteredMusic.map((item) => (
+    <div
+      key={item.id}
+      className="relative group bg-gray-900 border border-gray-700 rounded-xl overflow-hidden shadow-lg w-full"
+    >
+      <img
+        src={item.image}
+        alt={item.title}
+        className="w-full h-40 object-cover"
+      />
 
-              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
-                <button
-                  className="bg-yellow-500 text-black p-5 rounded-full"
-                  onClick={() => handleTogglePlay(item)}
-                >
-                  {currentSong?.id === item.id && isPlaying ? (
-                    <FaPause />
-                  ) : (
-                    <FaPlay />
-                  )}
-                </button>
-              </div>
+      <div className="absolute inset-0 bg-black/50 sm:opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+        <button
+          className="bg-yellow-500 text-black p-5 rounded-full"
+          onClick={() => handleTogglePlay(item)}
+        >
+          {currentSong?.id === item.id && isPlaying ? (
+            <FaPause />
+          ) : (
+            <FaPlay />
+          )}
+        </button>
+      </div>
 
-        
-              <div className="p-4 text-white space-y-1">
-                <h2 className="text-lg font-semibold">{item.title}</h2>
-                <p className="text-sm text-gray-300">{item.artist}</p>
-                <p className="text-xs text-gray-400">{item.category}</p>
-                <p className="text-xs text-gray-400">
-                  {item.album} • {item.releaseYear}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+      <div className="p-4 text-white space-y-1">
+        <h2 className="text-lg font-semibold">{item.title}</h2>
+        <p className="text-sm text-gray-300">{item.artist}</p>
+        <p className="text-xs text-gray-400">{item.category}</p>
+        <p className="text-xs text-gray-400">
+          {item.album} • {item.releaseYear}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
+
 
         {/* HIDDEN AUDIO ELEMENT */}
         <audio ref={audioRef} src={currentSong?.audio} hidden />
