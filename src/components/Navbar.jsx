@@ -14,7 +14,7 @@ function Navbar({ openModal }) {
 
         {/* Menu Links */}
         <ul
-          className={`flex flex-col gap-6 fixed top-0 right-0 w-2/3 h-auto bg-white/40 backdrop-blur-lg p-24 transition-transform duration-300 origin-top
+          className={`flex flex-col gap-6 z-50 fixed top-0 right-0 w-2/3 h-auto bg-white/40 backdrop-blur-lg p-24 transition-transform duration-300 origin-top
             ${menuOpen ? "scale-y-100" : "scale-y-0"}
             md:flex-row md:static md:w-auto md:h-auto md:bg-transparent md:p-0 md:gap-8 md:scale-y-100`}
         >
@@ -63,7 +63,7 @@ function Navbar({ openModal }) {
 
         {/* Hamburger Icon */}
         <div
-          className="md:hidden cursor-pointer z-50"
+          className="md:hidden cursor-pointer z-50 fixed top-4 right-4"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? (
