@@ -45,7 +45,7 @@ function MusicSection() {
   ];
 
   return (
-    <section id="work" className="bg-black text-white md:p-20 ">
+    <section id="work" className="bg-black text-white p-6 md:p-20 ">
       <div className="flex flex-col space-y-8 justify-self-center">
         <h2 className="relative text-4xl text-center md:text-7xl before:content-[''] before:absolute before:w-35 sm:before:w-70 before:h-1 before:rounded-full before:-bottom-3 before:left-25 sm:before:left-12 before:bg-yellow-500">
           Featured <span className="text-yellow-500">Work</span>
