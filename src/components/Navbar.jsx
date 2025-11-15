@@ -45,7 +45,7 @@ function Navbar({ openModal }) {
           </li>
           <li className=" sm:hidden">
             <a href="#Book" onClick={openModal} className="hover:text-gray-200">
-              Book a Section
+              Book Section
             </a>
           </li>
         </ul>
@@ -56,7 +56,7 @@ function Navbar({ openModal }) {
               onClick={openModal}
               className="hover:text-yellow-500 border-2 border-yellow-500 px-6 py-2 rounded-md shadow-md shadow-yellow-500"
             >
-              Book a Section
+              Book Section
             </a>
           </li>
         </ul>
