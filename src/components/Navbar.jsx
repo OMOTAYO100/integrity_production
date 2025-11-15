@@ -63,7 +63,7 @@ function Navbar({ openModal }) {
 
         {/* Hamburger Icon */}
         <div
-          className="md:hidden cursor-pointer z-50 fixed top-4 right-4"
+          className="md:hidden cursor-pointer z-50 fixed top-9 right-6"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? (
