@@ -1,5 +1,5 @@
 import React from "react";
-import HeroBg from "../assets/microphone-A.jpg";
+import HeroBg from "../assets/hero-image.jpg";
 import { FaPlay } from "react-icons/fa";
 import { CiBookmark } from "react-icons/ci";
 
