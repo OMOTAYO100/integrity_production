@@ -55,7 +55,7 @@ function MusicSection() {
         </p>
       </div>
 
-      <div className="p-10">
+      <div className="mt-6">
         {/* FILTER BUTTONS */}
         <div className="flex flex-wrap items-center justify-center gap-2 *:rounded-md *:border *:border-slate-200 text-white *:px-5 *:py-2">
           {categories.map((cat) => (
@@ -74,7 +74,7 @@ function MusicSection() {
         </div>
 
         
-        <div className="grid mt-10 gap-6 sm:grid-cols-2 lg:grid-cols-3 px-4 sm:px-6 lg:px-8">
+        <div className="grid mt-10 gap-6 sm:grid-cols-2 lg:grid-cols-3">
   {filteredMusic.map((item) => (
     <div
       key={item.id}
