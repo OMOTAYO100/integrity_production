@@ -68,7 +68,7 @@ function AboutSection() {
         <IoIosMusicalNotes className="text-5xl text-black" />
       </p>
       <h2 className="text-2xl font-semibold text-yellow-500">500+</h2>
-      <p className="text-xl font-semibold">Tracks Produced</p>
+      <p className="text-xl font-semibold text-center">Tracks Produced</p>
     </div>
 
     <div className="flex flex-col items-center space-y-2">
@@ -84,7 +84,7 @@ function AboutSection() {
         <LiaAwardSolid className="text-5xl text-black" />
       </p>
       <h2 className="text-2xl font-semibold text-yellow-500">8+</h2>
-      <p className="text-xl font-semibold">Awards Won</p>
+      <p className="text-xl font-semibold text-center">Awards Won</p>
     </div>
 
     <div className="flex flex-col items-center space-y-2">
@@ -92,7 +92,7 @@ function AboutSection() {
         <IoIosStar className="text-5xl text-black" />
       </p>
       <h2 className="text-2xl font-semibold text-yellow-500">30m+</h2>
-      <p className="text-xl font-semibold">Stream Generated</p>
+      <p className="text-xl font-semibold text-center">Stream Generated</p>
     </div>
   </div>
 </section>

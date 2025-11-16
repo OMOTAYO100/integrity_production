@@ -31,7 +31,7 @@ function TestimonialSection() {
         What Our Clients Say
       </h2>
 
-      <div className="max-w-2xl bg-[#212529] p-8 rounded-2xl shadow-lg transition-all duration-500 ease-in-out relative">
+      <div className="max-w-2xl bg-[#212529] p-8 rounded-2xl shadow-md shadow-yellow-500 transition-all duration-500 ease-in-out relative">
         
         {/* Left Arrow */}
         <button
