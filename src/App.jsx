@@ -11,22 +11,20 @@ import ServicesSection from "./components/ServicesSection";
 import ContactSection from "./components/ContactSection";
 import NewsSection from "./components/NewsSection";
 function App() {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       <div>
         <Navbar openModal={() => setIsModalOpen(true)} />
-      <HeroSection openModal={() => setIsModalOpen(true)} />
+        <HeroSection openModal={() => setIsModalOpen(true)} />
         <AboutSection />
-        <NewsSection />
         <TestimonialSection />
-        
         <MusicSection />
         <KnowMoreSection />
         <ServicesSection />
         <ContactSection />
-        <BookModal  isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
-     
+        <NewsSection />
+        <BookModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       </div>
     </>
   );
