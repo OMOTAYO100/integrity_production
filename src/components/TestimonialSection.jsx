@@ -19,7 +19,7 @@ function TestimonialSection() {
 
   // Auto-slide every 5 seconds
   useEffect(() => {
-    const interval = setInterval(nextSlide, 5000);
+    const interval = setInterval(nextSlide, 8000);
     return () => clearInterval(interval);
   }, []);
 
@@ -36,7 +36,7 @@ function TestimonialSection() {
         {/* Left Arrow */}
         <button
           onClick={prevSlide}
-          className="hidden sm:block absolute left-[-100px] top-1/2 -translate-y-1/2 bg-gray-700 p-3 rounded-full hover:bg-yellow-400 transition"
+          className="hidden sm:block absolute sm:left-[-100px] top-1/2 -translate-y-1/2 bg-gray-700 p-3 rounded-full hover:bg-yellow-400 transition"
         >
           <FaChevronLeft />
         </button>
@@ -54,7 +54,7 @@ function TestimonialSection() {
         {/* Right Arrow */}
         <button
           onClick={nextSlide}
-          className="hidden sm:block absolute right-[-100px] top-1/2 -translate-y-1/2 bg-gray-700 p-3 rounded-full hover:bg-yellow-400 transition"
+          className="hidden sm:block absolute sm:right-[-100px] top-1/2 -translate-y-1/2 bg-gray-700 p-3 rounded-full hover:bg-yellow-400 transition"
         >
           <FaChevronRight />
         </button>

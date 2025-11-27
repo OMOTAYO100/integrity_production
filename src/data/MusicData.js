@@ -8,7 +8,7 @@ import studioG from "../assets/saxophone-3397023_1280.jpg";
 import studioH from "../assets/old-microphone-6279518_1280.jpg";
 import studioI from "../assets/praying-5406270_1280.jpg";
 import studioJ from "../assets/hand-4661763_1280.jpg";
-import studioK from "../assets/carley-matt-8VEJWSeiBic-unsplash.jpg";
+import studioK from "../assets/people-2202471_1280.jpg";
 import studioL from "../assets/bret-lama-dvUNyD6QoUM-unsplash.jpg";
  
  const MusicData = [

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaMusic, FaHeadphonesAlt, FaMicrophone, FaStar } from "react-icons/fa";
+import { FaMusic, FaHeadphonesAlt, FaMicrophone, FaStar, FaRegBookmark, FaConnectdevelop  } from "react-icons/fa";
 import { IoCheckmarkCircle } from "react-icons/io5";
 
 function ServicesSection() {
@@ -171,7 +171,6 @@ function ServicesSection() {
             className="relative flex flex-col items-center gap-4 border border-gray-400 rounded-xl p-6 h-full 
     hover:border-yellow-500 hover:scale-105 transition-all duration-300 "
           >
-            {/* Most Popular Badge */}
             <span
               className="absolute -top-3 left-1/2 -translate-x-1/2 
       bg-yellow-500 text-black font-semibold text-sm px-4 py-1 rounded-full shadow-md"
@@ -179,19 +178,19 @@ function ServicesSection() {
               MOST POPULAR
             </span>
 
-            {/* Heading */}
+        
             <h2 className="text-center font-semibold text-3xl mt-4">
               Professional
             </h2>
 
-            {/* Price */}
+          
             <p className="text-center text-4xl text-yellow-500 font-semibold">
               $1500 <sub className="text-base text-gray-600">per track</sub>
             </p>
 
             <p className="text-center text-lg">Ideal for serious artists</p>
 
-            {/* Features */}
+            
             <ul className="flex flex-col gap-4 text-center mt-2">
               <li>
                 <IoCheckmarkCircle className="inline-block text-yellow-500" />{" "}
@@ -219,7 +218,6 @@ function ServicesSection() {
               </li>
             </ul>
 
-            {/* Button */}
             <button className="mt-6 w-full bg-yellow-500 text-black font-semibold py-3 rounded-lg hover:bg-yellow-400 transition">
               Choose Package
             </button>
@@ -274,8 +272,8 @@ function ServicesSection() {
         <h2 className="text-2xl sm:text-4xl font-semibold text-center w-[80%] mx-auto sm:w-full">Ready to Elevate Your Sound?</h2>
         <p className="text-xl w-[70%] text-center">Book a consultation to discuss your project and get a custom quote tailored to your needs.</p>
         <div className="flex flex-col sm:flex-row gap-6 *:border-2 *:px-8 *:py-2 *:rounded-lg">
-            <button className="bg-yellow-500 text-black font-semibold rotate-8 animate-pulse">Book Consultation</button>
-            <button>Get Quote</button>
+            <button className="bg-yellow-500 text-black font-semibold rotate-8 animate-pulse"><FaRegBookmark className="inline-block text-2xl" />{" "}Book Consultation</button>
+            <button><FaConnectdevelop className="inline-block text-2xl"/>{" "}Get Quote</button>
         </div>
       </div>
     </section>

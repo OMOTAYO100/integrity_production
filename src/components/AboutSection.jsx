@@ -26,18 +26,18 @@ function AboutSection() {
       </h2>
 
       <p className="text-md">
-        With over a decade in the music industry, I've crafted sounds for
-        multi-platinum artists and rising stars alike. My signature
-        production style blends innovative sound design with timeless
-        musicality.
-      </p>
+  With over a decade in the music industry, we have shaped sounds for 
+  multi-platinum artists and emerging talents worldwide. Our approach blends 
+  cutting-edge sound design with timeless musicality to create music that stands out.
+</p>
 
-      <p className="text-lg">
-        With over a decade in the music industry, I've crafted sounds for
-        multi-platinum artists and rising stars alike. My signature
-        production style blends innovative sound design with timeless
-        musicality.
-      </p>
+<p className="text-lg">
+  Backed by more than ten years of experience, we have delivered production that 
+  elevates both established artists and rising stars. Our signature style merges 
+  innovation with classic musical depth, resulting in a sound that feels fresh, 
+  powerful, and unforgettable.
+</p>
+
 
       <div className="space-y-2">
         <h2 className="text-yellow-500 font-semibold text-2xl">

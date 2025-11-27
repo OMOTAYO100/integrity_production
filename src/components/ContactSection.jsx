@@ -35,12 +35,14 @@ function ContactSection() {
       .then(() => {
         alert("Message sent successfully!");
         setFormData({ name: "", email: "", subject: "", message: "" });
+       
       })
       .catch((err) => {
         console.error("FAILED...", err);
         alert("Oops! Something went wrong, please try again.");
       });
   };
+  
 
   return (
    <section id="contact" className="p-6 md:p-20 bg-black text-white">
@@ -111,10 +113,8 @@ function ContactSection() {
       </button>
     </form>
 
-    {/* RIGHT SIDE CARDS */}
     <div className="flex flex-col gap-6 w-full lg:w-1/3">
 
-      {/* Studio Info */}
       <div className="bg-[#212529] p-4 rounded-xl text-center space-y-4 shadow-lg">
         <h3 className="text-2xl font-semibold">Studio Information</h3>
 
@@ -125,16 +125,15 @@ function ContactSection() {
 
         <div>
           <p className="text-yellow-500 font-semibold text-lg">+234 814 625 5425</p>
-          <p className="text-gray-300">Available 9 AM - 9 PM PST</p>
+          <p className="text-gray-300">Available 8 AM - 9 PM WAT</p>
         </div>
 
         <div>
-          <p className="text-yellow-500 font-semibold text-lg">info@beatmaster.com</p>
+          <p className="text-yellow-500 font-semibold text-lg">integrityproduction.com</p>
           <p className="text-gray-300">Replies within 24 hours</p>
         </div>
       </div>
 
-      {/* Social Media */}
       <div className="bg-[#212529] p-4 rounded-xl text-center space-y-4 shadow-lg">
         <h3 className="text-2xl text-yellow-500 font-semibold flex items-center justify-center gap-2">
           <FaHashtag /> Follow Me
@@ -184,7 +183,7 @@ function ContactSection() {
         </p>
       </div>
 
-      {/* Quick Response */}
+    
       <div className="bg-yellow-500 text-black p-4 rounded-xl text-center space-y-4 shadow-lg">
         <h3 className="text-xl  font-semibold flex items-center justify-center gap-2">
           <BsLightningChargeFill /> Quick Response Guarantee

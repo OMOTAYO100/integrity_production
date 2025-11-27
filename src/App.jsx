@@ -9,6 +9,7 @@ import BookModal from "./components/BookModal";
 import KnowMoreSection from "./components/KnowMoreSection";
 import ServicesSection from "./components/ServicesSection";
 import ContactSection from "./components/ContactSection";
+import NewsSection from "./components/NewsSection";
 function App() {
     const [isModalOpen, setIsModalOpen] = useState(false);
   return (
@@ -17,7 +18,9 @@ function App() {
         <Navbar openModal={() => setIsModalOpen(true)} />
       <HeroSection openModal={() => setIsModalOpen(true)} />
         <AboutSection />
+        <NewsSection />
         <TestimonialSection />
+        
         <MusicSection />
         <KnowMoreSection />
         <ServicesSection />
